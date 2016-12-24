@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black" >
+    
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/playRtsp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Play" /> 
+
+    <Button
+        android:id="@+id/playRtsp1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Play1" /> 
+        
+    <Button
+        android:id="@+id/playRtsp2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Play2" /> 
+        
+    <Button
+        android:id="@+id/playRtsp3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Play3" /> 
+            
+    <Button
+        android:id="@+id/playRtsp0"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Living" /> 
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <VideoView
+        android:id="@+id/mVideoView"
+        android:layout_gravity="left"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" /> 
+        
+    <SurfaceView
+        android:id="@+id/mSurfaceview"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/> 
+    </LinearLayout>
+
+
+</LinearLayout>
